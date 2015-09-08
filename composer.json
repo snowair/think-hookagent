@@ -1,11 +1,11 @@
 {
   "name": "snowair/think-hookagent",
-  "description": "ThinkPHP3.2 composerÀ©Õ¹°ü¿ª·¢¹¤¾ß",
+  "description": "ThinkPHP3.2 composeræ‰©å±•åŒ…å¼€å‘å·¥å…·",
   "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
     {
-      "name": "ÖìÑÇ½Ü",
+      "name": "æœ±äºšæ°",
       "email": "xcoolcc@gmail.com"
     }
   ],

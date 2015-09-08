@@ -1,10 +1,10 @@
-˵��
+说明
 ========
 
-ThinkPHP����չ��ʹ��ʱ,������Ҫ������Ϊ���ü�һЩӦ������. ����Ҫ�û��ֶ�����.
+ThinkPHP的扩展在使用时,往往需要增加行为配置即一些应用配置. 这需要用户手动处理.
 
-HookAgent�����þ���Ϊ�д�����Ҫ����չ���ṩһ��ע����Ϊ��ͳһ���, ʹ��HookAgent��������չ��,
-�����û�ֻ��Ҫ�� Common/Conf/tags.php ����һ����Ϊ,����:
+HookAgent的作用就是为有此类需要的扩展包提供一个注入行为的统一入口, 使用HookAgent开发的扩展包,
+最终用户只需要在 Common/Conf/tags.php 增加一个行为,即可:
 
 ```
 return array(
@@ -12,5 +12,5 @@ return array(
 )
 ```
 
-����
+开发
 ======
