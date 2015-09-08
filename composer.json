@@ -1,0 +1,15 @@
+{
+  "name": "snowair/think-hookagent",
+  "description": "ThinkPHP3.2 composer扩展包开发工具",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "朱亚杰",
+      "email": "xcoolcc@gmail.com"
+    }
+  ],
+  "autoload": {
+    "files": ["HookAgent.class.php"]
+  }
+}
