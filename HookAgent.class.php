@@ -11,11 +11,13 @@ class HookAgent
     public function app_init()
     {
         $bags = self::$tags;
-        foreach ($bags as $hook => $class) {
-            $tags = Hook::get($hook);
-            if (class_exists($class)) {
-                if (!array_search( $tags, $class )) {
-                    Hook::add($hook,$class);
+        foreach ($bags as $hook => $classes) {
+            foreach ($classes as $class) {
+                $tags = Hook::get($hook);
+                if (class_exists($class)) {
+                    if (!array_search( $tags, $class )) {
+                        Hook::add($hook,$class);
+                    }
                 }
             }
         }

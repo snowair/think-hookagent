@@ -8,7 +8,9 @@ HookAgent的作用就是为有此类需要的扩展包提供一个注入行为�
 
 ```
 return array(
- 'app_init'=>'Snowair\Think\Behavior\HookAgent',
+ 'app_init'=>array(
+     'Snowair\Think\Behavior\HookAgent',
+ ),
 )
 ```
 
