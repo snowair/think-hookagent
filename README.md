@@ -16,3 +16,27 @@ return array(
 
 开发
 ======
+
+如果你的thinkphp composer包需要注入行为, 只需要创建类似这样的文件:
+
+```
+<?php
+// include.php
+if (class_exists( 'Snowair\Think\Behavior\HookAgent' )) {
+    \Snowair\Think\Behavior\HookAgent::add('app_begin','Snowair\\Dotenv\\DotEnv');
+}
+```
+
+然后在包的composer.json文件中加入require和autoload设置:
+
+```
+{
+  "name": "xxx/xxx",
+  "require": {
+    "snowair/think-hookagent": ">=0.1"
+  },
+  "autoload": {
+    "files": ["include.php"]
+  }
+}
+```

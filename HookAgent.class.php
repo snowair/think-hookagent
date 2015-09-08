@@ -15,7 +15,7 @@ class HookAgent
             foreach ($classes as $class) {
                 $tags = Hook::get($hook);
                 if (class_exists($class)) {
-                    if (!array_search( $tags, $class )) {
+                    if (!array_search( $class, $tags )) {
                         Hook::add($hook,$class);
                     }
                 }
@@ -24,8 +24,8 @@ class HookAgent
     }
 
     static public function add($tag,$name) {
-        $bags = self::$tags[$tag];
-        if ( !array_search($bags,$name)) {
+        $bags = isset(self::$tags[$tag])?self::$tags[$tag]:array();
+        if ( !array_search( $name, $bags )) {
             self::$tags[$tag][] =   $name;
         }
     }
