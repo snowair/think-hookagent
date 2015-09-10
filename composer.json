@@ -10,6 +10,8 @@
     }
   ],
   "autoload": {
-    "files": ["HookAgent.class.php"]
+    "psr-4": {
+      "Snowair\\Think\\Behavior\\":"."
+    }
   }
 }
