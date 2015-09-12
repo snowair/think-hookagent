@@ -40,3 +40,5 @@ if (class_exists( 'Snowair\Think\Behavior\HookAgent' )) {
   }
 }
 ```
+
+* 注意: 你只能借助HookAgent从 `app_begin` 往后开始注入行为. 你无法通过HookAgent向`app_init`注入行为.
